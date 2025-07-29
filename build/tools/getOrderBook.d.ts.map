@@ -1,0 +1,1 @@
+{"version":3,"file":"getOrderBook.d.ts","sourceRoot":"","sources":["../../src/tools/getOrderBook.ts"],"names":[],"mappings":"AAEA,eAAO,MAAM,YAAY;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;cAiCP;QACd,SAAS,CAAC,EAAE,MAAM,CAAC;QACnB,QAAQ,CAAC,EAAE,MAAM,CAAC;QAClB,KAAK,CAAC,EAAE,MAAM,CAAC;QACf,uBAAuB,CAAC,EAAE,OAAO,CAAC;QAClC,0BAA0B,CAAC,EAAE,OAAO,CAAC;KACtC;;;;;;;;;;;;;CA8LF,CAAC"}

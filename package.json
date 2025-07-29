@@ -1,0 +1,66 @@
+{
+  "name": "@xingyuchen/polymarket-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Polymarket prediction markets integration with Claude Desktop",
+  "main": "build/index.js",
+  "type": "module",
+  "bin": {
+    "polymarket-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsc --watch",
+    "sse": "npx supergateway --stdio \"node build/index.js\" --port 3100",
+    "prepublishOnly": "npm run build",
+    "publish:patch": "node scripts/publish.js patch",
+    "publish:minor": "node scripts/publish.js minor",
+    "publish:major": "node scripts/publish.js major",
+    "publish:dry-run": "node scripts/publish.js --dry-run",
+    "pack": "npm pack",
+    "version:patch": "npm version patch",
+    "version:minor": "npm version minor",
+    "version:major": "npm version major"
+  },
+  "keywords": [
+    "mcp",
+    "polymarket",
+    "prediction-markets",
+    "claude",
+    "ai",
+    "trading",
+    "model-context-protocol",
+    "blockchain",
+    "defi"
+  ],
+  "author": "Xingyu Chen <guangxiangdebizi@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guangxiangdebizi/polymarket-mcp.git"
+  },
+  "homepage": "https://github.com/guangxiangdebizi/polymarket-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/guangxiangdebizi/polymarket-mcp/issues"
+  },
+  "files": [
+    "build/**/*",
+    "README.md",
+    "LICENSE",
+    "DEPLOYMENT.md",
+    "POLYMARKET_API_REPORT.md"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.6.0",
+    "axios": "^1.6.0",
+    "ws": "^8.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/ws": "^8.5.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
